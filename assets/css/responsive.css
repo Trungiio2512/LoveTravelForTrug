@@ -1,0 +1,43 @@
+
+
+
+/* tablet and moblie */
+
+@media (max-width:1023px) {
+
+    #header{
+        position: relative;
+    }
+
+    .header-bar{
+        position: absolute;
+        right: 0;
+    }
+    
+    .header-nav,
+    .hide-on-mobile-tablet{
+        flex-direction: column;
+    }
+
+    .header-nav{
+    }
+}
+
+/* Pc > 1024px*/
+
+
+
+@media (min-width: 1024px) {
+    
+}
+
+/* tablet */
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+}
+
+@media (max-width: 767px) {
+    
+}

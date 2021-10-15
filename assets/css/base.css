@@ -5,10 +5,10 @@ html{
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
-
+/* 
 body::-webkit-scrollbar {
     width: 8px;
-}
+} */
 
 
 
@@ -65,6 +65,13 @@ body::-webkit-scrollbar {
     padding-right: 15px;
 }
 
+.grid__col-half{
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.grid__col-4,
 .grid__col-third{
     width: calc(100% /3);
     padding-left: 15px;
@@ -77,21 +84,34 @@ body::-webkit-scrollbar {
     padding-right: 15px;
 }
 
+.grid__col-8{
+    width: 66.66667%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .grid__col-2{
     width: 16.66667%;
     padding-left: 15px;
     padding-right: 15px;
 }
 
-.grid__col-3{
-    width: calc(100% / 3);
+
+.grid__col-1-4{
+    width: 25%;
     padding-left: 15px;
     padding-right: 15px;
 }
 
+
 .pd--15{
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.mg--tb-30{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .mg--tb-15{
@@ -126,6 +146,43 @@ body::-webkit-scrollbar {
     background: #1bb9d5;
 }
 
+.text--underline-your-holiday{
+    background: #f87293;
+}
+
+.package-info-btn-berlin{
+    background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%) !important;
+}
+
+.package-info-btn-hongkong{
+    background: linear-gradient(to right, #f76570 0%, #f78d65 100%) !important;
+}
+
+.package-info-btn-sanfranco{
+    background: linear-gradient(to right, #ba71da 0%, #da717b 100%) !important;
+}
+
+.package-info-btn-tuscany{
+    background: linear-gradient(to right, #1bbc9b 0%, #1bbc63 100%) !important;
+}
+
+.package-info-btn-amsterdam{
+    background: linear-gradient(to right, #f3a46b 0%, #f3c96b 100%) !important;
+}
+
+.package-info-btn-phuket{
+    background: linear-gradient(to right, #14b9d5 0%, #14d5b1 100%) !important;
+}
+
+.option-package-info-header--bold{
+    font-weight: 600;
+}
+
+.text-direction--underline{
+    text-decoration: underline;
+    font-weight: 400;
+}
+
 ul{
     margin: 0;
     padding-left: 0;
@@ -133,6 +190,7 @@ ul{
 }
 
 a{
+    /* display: block; */
     text-decoration: none;
 }
 
@@ -145,6 +203,7 @@ button{
 }
 
 .btn{
+    display: block;
     text-decoration: none;
     border-radius: 20px;
     letter-spacing: 2px;

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <title>Love Travel</title>
 </head>
 <body>
@@ -17,13 +18,13 @@
 
         <header id="header">
             <div class="grid wide">
-                <div class="header-navbar-block">
+                <div class="header-navbar-block hide-on-mobile-tablet">
+                    <div class="header-logo">
+                        <a href="">
+                            <img src="./assets/img/logo/logo.png" alt="" class="header-logo-img">
+                        </a>
+                    </div>
                     <div class="header-bar">
-                        <div class="header-logo">
-                            <a href="">
-                                <img src="./assets/img/logo/logo.png" alt="" class="header-logo-img">
-                            </a>
-                        </div>
                         <div class="header-navbar hide-on-mobile-tablet">
                             <ul class="header-nav">
                                 <li class="header-navlist">
@@ -408,7 +409,7 @@
                     <div class="slider__content">
                         <div class="slider__title">
                             Search your next
-                            <span class="slider__sub-title" style="position: relative;z-index: 1;">
+                            <span class="slider__sub-title" style="position: relative; z-index: 1;">
                                 Holiday
                                 <span class="text--underline text--underline-holiday"></span>
                             </span>
@@ -420,8 +421,27 @@
                     </div>
                     <div class="slider__input">
                         <input required type="text" name="" placeholder="Choose your Destination ..." id="" class="slider__input-text">
+                        <div class="slider-history">
+                            <div class="slider-history__item">Choose your option Destination</div>
+                            <div class="slider-history__item">Europe</div>
+                            <div class="slider-history__item">
+                                <i class="slider-history__item-icon fas fa-minus"></i>
+                                Italy
+                            </div>
+                            <div class="slider-history__item">
+                                <i class="slider-history__item-icon fas fa-minus"></i>
+                                Netherlands
+                            </div>
+                            <div class="slider-history__item">Asia</div>
+                            <div class="slider-history__item">
+                                <i class="slider-history__item-icon fas fa-minus"></i>
+                                Thailandia
+                            </div>
+                            <div class="slider-history__item">United States</div>
+                            <div class="slider-history__item">Oceania</div>
+                        </div>
                         <button class="slider__input-btn">
-                            <i class="fas fa-search"></i>
+                            <i class="slider-history__item-icon fas fa-search"></i>
                         </button>
                     </div>
                     <div class="slider__option">
@@ -454,7 +474,6 @@
                     </div>
                 </div>
             </div>
-          
         </div>
 
         <!-- destination -->
@@ -701,6 +720,514 @@
                         </div>
                     </div>
               </div>
+            </div>
+        </div>
+
+        <!-- your holiday -->
+        <div class="yourHoliday">
+           <div class="yourHoliday__container">
+                <div class="grid__col-half yourHoliday--wrapper-box">
+                    <div class="yourHoliday-title">
+                        Your
+                    </div>
+                    <div class="yourHoliday-title">
+                        Next
+                        <span class="yourHoliday-subtitle">
+                            Holiday
+                            <span class="text--underline text--underline-your-holiday"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="grid__col-half yourHoliday--wrapper-box">
+                    <a href="" class="yourHoliday__box-btn">
+                        <div class="yourHoliday-btn btn">
+                            view all packages
+                        </div>
+                    </a>
+                </div>
+           </div>
+        </div>
+
+        <!-- best beaches -->
+
+        <div class="beaches">
+            <div class="grid wide">
+                <div class="grid__row">
+                    <div class="grid__col-4">
+                        <div class="header-beaches-package-subtitle">
+                            north america
+                        </div>
+                        <div class="header-beaches-package-title">
+                            The Best
+                            <span class="header-beaches-package-main-title">
+                                Beaches
+                                <span class="text--underline text--underline-beaches"></span>
+                            </span>
+                        </div>
+                        <p class="header-beaches-package-description mg--tb-30">
+                            Lorem ipsum dolor sit amet, consectetur adip iscing elit. Proin rhoncus urna dictum neque molestie ultricies mauris ac.
+                        </p>
+                        <p class="header-beaches-package-description mg--tb-30">
+                            Lorem ipsum dolor sit amet, consectetur adip iscing elit. Proin rhoncus urna dictum neque molestie ultricies mauris ac.
+                        </p>
+
+                        <div class="bestBeaches-price">
+                            <span class="bestBeaches-price__previous">800</span>
+                            <span class="bestBeaches-price__new">500</span>
+                            <span class="bestBeaches-price__icon-dollar">$</span>
+                            <span class="bestBeaches-price__divided">/</span>
+                            <span class="bestBeaches-price__desc">for person</span>
+                        </div>
+
+                        <a href="" class="beaches-btn btn">book now</a>
+                    </div>
+                    <div class="grid__col-8">
+                        <div class="beaches-famous">
+                            <input type="radio" for="" name="slider-beaches" class="slider-beaches" id="slider-beaches1" checked></input>
+                            <input type="radio" for="" name="slider-beaches" class="slider-beaches" id="slider-beaches2"></input>
+                            <input type="radio" for="" name="slider-beaches" class="slider-beaches" id="slider-beaches3"></input>
+                            
+                            <div class="slider-beaches__imgs">
+                                <img class="slider-beaches__img" src="./assets/img/img-beaches/beaches__img1.jpg" alt="" >
+                                <img class="slider-beaches__img" src="./assets/img/img-beaches/beaches__img2.jpg" alt="" >
+                                <img class="slider-beaches__img" src="./assets/img/img-beaches/beaches__img3.jpg" alt="" >
+                            </div>
+
+                            <div class="slider-beaches__dots">
+                                <label for="slider-beaches1" class="slider-beaches__dot"></label>
+                                <label for="slider-beaches2" class="slider-beaches__dot"></label>
+                                <label for="slider-beaches3" class="slider-beaches__dot"></label>
+                            </div>
+
+                            <div class="timeRemaining-beaches">
+                                <div class="grid__row">
+                                    <div class="grid__col-1-4">
+                                        <span class="timeRemaining-number">000</span>
+                                        <span class="timeRemaining-title">days</span>
+                                    </div>
+                                    <div class="grid__col-1-4">
+                                        <span class="timeRemaining-number">00</span>
+                                        <span class="timeRemaining-title">hours</span>
+                                    </div>
+                                    <div class="grid__col-1-4">
+                                        <span class="timeRemaining-number">00</span>
+                                        <span class="timeRemaining-title">minutes</span>
+                                    </div>
+                                    <div class="grid__col-1-4">
+                                        <span class="timeRemaining-number">00</span>
+                                        <span class="timeRemaining-title">seconds</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- type of tourism -->
+
+        <div class="typeOfTourism">
+            <div class="grid wide">
+               <div class="grid__row">
+                    <div class="grid__col-third">
+                        <div class="typeOfTourism-box">
+                            <div class="typeOfTourism__box-img">
+                                <img src="./assets/img/img-typeOfTourism/icon-around.png" alt="">
+                            </div>
+                            <div class="typeOfTourism__box-body">
+                                <span class="typeOfTourism__heading">Word Tour</span>
+                                <p class="header-beaches-package-description mg--tb-30">
+                                    Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
+                                </p>
+                                <a href="" class="typeOfTourism__reas-full">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__col-third">
+                        <div class="typeOfTourism-box">
+                            <div class="typeOfTourism__box-img">
+                                <img src="./assets/img/img-typeOfTourism/icon-boat.png" alt="">
+                            </div>
+                            <div class="typeOfTourism__box-body">
+                                <span class="typeOfTourism__heading">Cruises</span>
+                                <p class="header-beaches-package-description mg--tb-30">
+                                    Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
+                                </p>
+                                <a href="" class="typeOfTourism__reas-full">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__col-third">
+                        <div class="typeOfTourism-box">
+                            <div class="typeOfTourism__box-img">
+                                <img src="./assets/img/img-typeOfTourism/icon-landmark.png" alt="">
+                            </div>
+                            <div class="typeOfTourism__box-body">
+                                <span class="typeOfTourism__heading">Best Tours</span>
+                                <p class="header-beaches-package-description mg--tb-30">
+                                    Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
+                                </p>
+                                <a href="" class="typeOfTourism__reas-full">View More</a>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+
+        <!-- Discover -->
+
+        <div class="discover">
+            <div class="discover__container-main">
+                <div class="discover__container-box">
+                    <div class="discover__container discover--cities">
+                        <div class="discover__heading-subtitle">01. last minute</div>
+                        <div class="discover__heading-title">Discover Cities</div>
+                        <a href="" class="discover__btn btn discover--cities-color">Details</a>
+                    <div class="background-img-rgba"></div>
+                </div>
+                </div>
+                <div class="discover__container-box">
+                    <div class="discover__container discover--nature">
+                        <div class="discover__heading-subtitle">02. promotion</div>
+                        <div class="discover__heading-title">Discover Nature</div>
+                        <a href="" class="discover__btn btn discover--nature-color">Details</a>
+                        <div class="background-img-rgba"></div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <!-- packages -->
+
+        <div class="ourPackages">
+            <div class="grid wide">
+                <div class="ourPackages__box">
+                    <div class="header-option-package-subtitle">
+                        promotion
+                    </div>
+                    <div class="header-option-package-title" style="font-size: 3.6rem; line-height: 4rem; margin-top: 18px;">
+                        Our
+                        <span style="position: relative; z-index: 1;">
+                            packages
+                            <span class="text--underline text--underline-ourPackages"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="grid__row">
+                    <div class="grid__col-third">
+                       <div class="ourPackages__contianer">
+                            <div class="ourPackages__img">
+                                <img src="./assets/img/img-ourPackages/berlin.jpg" alt="">
+                            </div>
+                            <div class="ourPackages__body">
+                                <div class="ourPackages__body-box">
+                                    <a href="" class="option-package-info-header option-package-info-header--bold">
+                                        Berlin
+                                    </a>
+                                    <a href="" class="option-package-info-destination">
+                                        <i class="ti-location-pin"></i>
+                                        <p class="option-package-info__destination">
+                                            Europe
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="ourPackages__body-box">
+                                    <div class="ourPackages__body-box-price">
+                                        <div class="ourPackages__body-price-title">
+                                            <span class="ourPackages__body-price-subtitle">cultural</span>
+                                            <span class="ourPackages__body-price-subtitle">
+                                                relax
+                                                <span class="ourPackages-num package-info-btn-berlin">+1</span>
+                                            </span>
+                                        </div>
+                                        <div class="ourPackages__body-price-discount">
+                                            <span class="ourPackages-price__new">700</span>
+                                            <span class="ourPackages-price__icon-dollar">$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="header-beaches-package-description mg--tb-15">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                                </p>
+                                <a href="" class="ourPackages__btn btn package-info-btn-berlin">Details</a>
+                                <div class="ourPackages__img-icon package-info-btn-berlin">
+                                    <img src="./assets/img/img-icon-option/europe.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__col-third">
+                        <div class="ourPackages__contianer">
+                            <div class="ourPackages__img">
+                                <img src="./assets/img/img-ourPackages/hongkong.jpg" alt="">
+                            </div>
+                            <div class="ourPackages__body">
+                                <div class="ourPackages__body-box">
+                                    <a href="" class="option-package-info-header option-package-info-header--bold">
+                                        Hong Kong
+                                    </a>
+                                    <a href="" class="option-package-info-destination">
+                                        <i class="ti-location-pin"></i>
+                                        <p class="option-package-info__destination">
+                                            Asia
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="ourPackages__body-box">
+                                    <div class="ourPackages__body-box-price">
+                                        <div class="ourPackages__body-price-title">
+                                            <span class="ourPackages__body-price-subtitle">history</span>
+                                            <span class="ourPackages__body-price-subtitle">
+                                                cultural    
+                                                <span class="ourPackages-num package-info-btn-hongkong">+1</span>
+                                            </span>
+                                        </div>
+                                        <div class="ourPackages__body-price-discount">
+                                            <span class="ourPackages-price__previous">1000</span>
+                                            <span class="ourPackages-price__new">500</span>
+                                            <span class="ourPackages-price__icon-dollar">$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="header-beaches-package-description mg--tb-15">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                                </p>
+                                <a href="" class="ourPackages__btn btn package-info-btn-hongkong">Details</a>
+                                <div class="ourPackages__img-icon package-info-btn-hongkong">
+                                    <img src="./assets/img/img-icon-option/asia.png" alt="">
+                                </div>
+                            </div>
+                            <div class="ourPackages__sale">sale</div>
+
+                        </div>
+                    </div>
+                        <div class="grid__col-third">
+                            <div class="ourPackages__contianer">
+                                <div class="ourPackages__img">
+                                    <img src="./assets/img/img-ourPackages/sanfrancisco.jpg" alt="">
+                                </div>
+                                <div class="ourPackages__body">
+                                    <div class="ourPackages__body-box">
+                                        <a href="" class="option-package-info-header option-package-info-header--bold">
+                                            San Francisco
+                                        </a>
+                                        <a href="" class="option-package-info-destination">
+                                            <i class="ti-location-pin"></i>
+                                            <p class="option-package-info__destination">
+                                                United States
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="ourPackages__body-box">
+                                        <div class="ourPackages__body-box-price">
+                                            <div class="ourPackages__body-price-title">
+                                                <span class="ourPackages__body-price-subtitle">sport</span>
+                                                <span class="ourPackages__body-price-subtitle">
+                                                    relax
+                                                    <span class="ourPackages-num package-info-btn-sanfranco">+1</span>
+                                                </span>
+                                            </div>
+                                            <div class="ourPackages__body-price-discount">
+                                                <span class="ourPackages-price__new">400</span>
+                                                <span class="ourPackages-price__icon-dollar">$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="header-beaches-package-description mg--tb-15">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                                    </p>
+                                    <a href="" class="ourPackages__btn btn package-info-btn-sanfranco">Details</a>
+                                    <div class="ourPackages__img-icon package-info-btn-sanfranco">
+                                        <img src="./assets/img/img-icon-option/sanpransico.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+
+        <div class="footer">
+            <div class="grid wide">
+                <div class="footer__container-top">
+                    <div class="grid__row">
+                        <div class="grid__col-2"></div>
+                        <div class="grid__col-8">
+                            <div class="footer__container-top-box">
+                                <div class="grid__row">
+                                    <div class="grid__col-half">
+                                        <div class="footer__container-top-banner-box">
+                                            <div class="header-beaches-package-subtitle">
+                                                keep in touch
+                                            </div>
+                                            <div class="header-beaches-package-title">
+                                                Travel with us
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__col-half">
+                                        <form action="" class="form-control">
+                                            <div class="form-control__input">
+                                                <input type="text">
+                                            </div>
+                                            <button type="submit" class="ourPackages__btn btn footer__btn">Send</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__col-2"></div>
+                    </div>   
+                </div>
+                
+                <div class="footer__container-bottom">
+                    <div class="grid__row">
+                        <div class="grid__col-half">
+                            <div class="footer__container-bottom-box">
+                                <div class="footer-logo">
+                                    <a href="">
+                                        <img src="./assets/img/img-footer/logo-color.png" alt="" class="footer-logo-img">
+                                    </a>
+                                </div>
+                                <p class="footer-description mg--tb-30">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut diam et nibh <strong class="text-direction--underline">condimentum</strong> venenatis eu ac magnasin. Quisque interdum est mauris, eget ullamcorper.
+                                </p>
+                                <div class="footer-link">
+                                    <a href="" class="footer-link__item">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="" class="footer-link__item">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="" class="footer-link__item">
+                                        <i class="fab fa-facebook-square"></i>
+                                    </a>
+                                    <a href="" class="footer-link__item">
+                                        <i class="fab fa-vimeo-v"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__col-half">
+                            <div class="grid__row">
+                                <div class="grid__col-third">
+                                    <div class="footer__container-bottom-box">
+                                        <span class="footer-superMenu__title">
+                                            our Agency
+                                        </span>
+                                        <ul class="footer__superMenu-list mg--tb-30">
+                                            <li class="footer__superMenu-item">
+                                                <i class="footer-superMenu__icon fas fa-chevron-right"></i>
+                                                <span class="footer-superMenu__subtitle">Services</span>
+                                            </li>
+                                            <li class="footer__superMenu-item">
+                                                <i class="footer-superMenu__icon fas fa-chevron-right"></i>
+                                                <span class="footer-superMenu__subtitle">Insurancee</span>
+                                            </li>
+                                            <li class="footer__superMenu-item">
+                                                <i class="footer-superMenu__icon fas fa-chevron-right"></i>
+                                                <span class="footer-superMenu__subtitle">Agency</span>
+                                            </li>
+                                            <li class="footer__superMenu-item">
+                                                <i class="footer-superMenu__icon fas fa-chevron-right"></i>
+                                                <span class="footer-superMenu__subtitle">Tourism</span>
+                                            </li>
+                                            <li class="footer__superMenu-item">
+                                                <i class="footer-superMenu__icon fas fa-chevron-right"></i>
+                                                <span class="footer-superMenu__subtitle">Payment</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="grid__col-third">
+                                    <div class="footer__container-bottom-box">
+                                        <span class="footer-superMenu__title">
+                                            partner
+                                        </span>
+                                        <ul class="footer__superMenu-list mg--tb-30">
+                                            <li class="footer__superMenu-item">
+                                                <i class="footer-superMenu__icon fas fa-chevron-right"></i>
+                                                <span class="footer-superMenu__subtitle">Booking</span>
+                                            </li>
+                                            <li class="footer__superMenu-item">
+                                                <i class="footer-superMenu__icon fas fa-chevron-right"></i>
+                                                <span class="footer-superMenu__subtitle">RetalCar</span>
+                                            </li>   
+                                            <li class="footer__superMenu-item">
+                                                <i class="footer-superMenu__icon fas fa-chevron-right"></i>
+                                                <span class="footer-superMenu__subtitle">HostelWorld</span>
+                                            </li>
+                                            <li class="footer__superMenu-item">
+                                                <i class="footer-superMenu__icon fas fa-chevron-right"></i>
+                                                <span class="footer-superMenu__subtitle">Trivago</span>
+                                            </li>
+                                            <li class="footer__superMenu-item">
+                                                <i class="footer-superMenu__icon fas fa-chevron-right"></i>
+                                                <span class="footer-superMenu__subtitle">TripAdvisor</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="grid__col-third">
+                                    <div class="footer__container-bottom-box">
+                                        <span class="footer-superMenu__title">
+                                            last minute
+                                        </span>
+                                        <ul class="footer__superMenu-list mg--tb-30">
+                                            <li class="footer__superMenu-item">
+                                                <i class="footer-superMenu__icon fas fa-chevron-right"></i>
+                                                <span class="footer-superMenu__subtitle">London</span>
+                                            </li>
+                                            <li class="footer__superMenu-item">
+                                                <i class="footer-superMenu__icon fas fa-chevron-right"></i>
+                                                <span class="footer-superMenu__subtitle">California</span>
+                                            </li>   
+                                            <li class="footer__superMenu-item">
+                                                <i class="footer-superMenu__icon fas fa-chevron-right"></i>
+                                                <span class="footer-superMenu__subtitle">Indonesia</span>
+                                            </li>
+                                            <li class="footer__superMenu-item">
+                                                <i class="footer-superMenu__icon fas fa-chevron-right"></i>
+                                                <span class="footer-superMenu__subtitle">Europe</span>
+                                            </li>
+                                            <li class="footer__superMenu-item">
+                                                <i class="footer-superMenu__icon fas fa-chevron-right"></i>
+                                                <span class="footer-superMenu__subtitle">Oceania</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="footer-banner">
+                    <div class="grid__row">
+                        <div class="grid__col-half">
+                            <div class="footer-banner__title footer-banner--left">the best wordpress travel theme</div>
+                        </div>
+                        <div class="grid__col-half">
+                            <div class="footer-banner__title footer-banner--right">copyright nicdark theme 2018</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- price hot -->
+
+        <div class="price-hot">
+            <div class="price-hot__box price-hot__box-price">54</div>
+            <div class="price-hot__box price-hot__box-envira">
+                <i class="fab fa-envira"></i>
+            </div>
+            <div class="price-hot__buy-now">
+                <div class="price-hot__buy-now-container">buy now</div>
             </div>
         </div>
     </div>
